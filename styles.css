@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@800&family=Mulish&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: rgb(63, 179, 251);
+  background: linear-gradient(
+    180deg,
+    rgba(63, 179, 251, 1) 0%,
+    rgba(251, 228, 193, 1) 32%,
+    rgba(229, 244, 255, 1) 82%,
+    rgba(255, 255, 255, 1) 100%
+  );
+
+  font-family: Mulish, sans-serif;
+
+  display: grid;
+  place-items: center;
+  padding: 1em;
+}
+
+.card {
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+
+  max-width: 500px;
+
+  padding: 1.5em;
+
+  display: grid;
+  gap: 1em;
+  grid-template-rows: auto auto 40px;
+}
+
+.card__cabecera {
+  font-size: 1.5rem;
+  font-weight: 800;
+  padding-bottom: 0.5em;
+  text-align: center;
+
+  border-bottom: 1px solid rgb(226, 230, 235);
+}
+.card__frase {
+  margin: 1rem;
+}
+
+.card__controls {
+  display: flex;
+  gap: 1em;
+  justify-content: space-between;
+}
+
+.card__controls .button {
+  color: #ffffff;
+  background: #1568db;
+  border: 0px solid #ffffff;
+
+  box-shadow: 2px 2px 5px #707070;
+
+  border-radius: 8px;
+
+  flex: 1;
+  text-align: center;
+  padding-top: 8px;
+  /* padding:1em; */
+  cursor: pointer;
+}
+
+.card__controls .button:active {
+  cursor: pointer;
+  position: relative;
+  top: 2px;
+}
+
+.firma {
+  font-size: 0.9em;
+  font-weight: 800;
+}
